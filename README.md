@@ -5,7 +5,7 @@ Home: http://jupyter.org
 
 Package license: BSD
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Jupyter terminal console
 
