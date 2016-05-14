@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jupyter_console-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/jupyter_console-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/jupyter_console-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jupyter_console-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jupyter_console-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jupyter_console-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jupyter-console-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jupyter-console-feedstock/branch/master)
 
 Current release info
 ====================
