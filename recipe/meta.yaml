@@ -32,7 +32,7 @@ test:
 
 about:
   home: http://jupyter.org
-  license: BSD
+  license: BSD 3-Clause
   summary: Jupyter terminal console
 
 extra:

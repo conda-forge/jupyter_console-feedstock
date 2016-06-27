@@ -3,7 +3,7 @@ About jupyter_console
 
 Home: http://jupyter.org
 
-Package license: BSD
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
