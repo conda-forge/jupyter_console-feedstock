@@ -1,4 +1,4 @@
-{% set version = "4.1.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: jupyter_console
@@ -7,11 +7,13 @@ package:
 source:
   fn: jupyter_console-{{ version }}.tar.gz
   url: https://github.com/jupyter/jupyter_console/archive/{{ version }}.tar.gz
-  md5: a8b077ae0a5c57e9518ac039ad5febb8
+  sha256: e966b2b5bf9a1e8c5bd11a6335bb11f68ec585ea39b801721b2ed9dd964468fa
 
 build:
   number: 0
   script: python setup.py install
+  entry_points:
+    - jupyter-console = jupyter_console.app:main
 
 requirements:
   build:
@@ -21,8 +23,9 @@ requirements:
     - jupyter_client
     - ipython
     - ipykernel
+    - prompt_toolkit
+    - pygments
     - pexpect  # [not win]
-    - pyreadline  # [win]
 
 test:
   commands:
@@ -41,3 +44,4 @@ extra:
     - minrk
     - pelson
     - takluyver
+    - ocefpaf
