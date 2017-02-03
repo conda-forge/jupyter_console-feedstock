@@ -11,13 +11,14 @@ source:
 
 build:
   number: 0
-  script: pip install .
+  script: python -m pip install --no-deps .
   entry_points:
     - jupyter-console = jupyter_console.app:main
 
 requirements:
   build:
     - python
+    - pip
   run:
     - python
     - jupyter_client
