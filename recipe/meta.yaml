@@ -24,7 +24,7 @@ requirements:
     - jupyter_client
     - ipython
     - ipykernel
-    - prompt_toolkit >=2.0.0,<2.1.0
+    - prompt_toolkit >=2.0.0
     - pygments
 
 test:
