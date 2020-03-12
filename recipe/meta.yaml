@@ -9,7 +9,7 @@ source:
   sha256: 6f6ead433b0534909df789ea64f0a14cdf9b6b2360757756f08182be4b9e431b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
@@ -24,7 +24,7 @@ requirements:
     - jupyter_client
     - ipython
     - ipykernel
-    - prompt_toolkit >=2.0.0,<2.1.0
+    - prompt_toolkit >=2.0.0,<3.1.0,!=3.0.0,!=3.0.1
     - pygments
 
 test:
@@ -41,6 +41,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - SylvainCorlay
     - jakirkham
     - minrk
     - pelson
