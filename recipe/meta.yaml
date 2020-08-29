@@ -17,10 +17,10 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.6
     - pip
   run:
-    - python >=3.5
+    - python >=3.6
     - jupyter_client
     - ipython
     - ipykernel
@@ -48,3 +48,4 @@ extra:
     - takluyver
     - ocefpaf
     - blink1073
+    - Carreau
