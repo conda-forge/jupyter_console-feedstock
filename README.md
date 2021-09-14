@@ -36,6 +36,7 @@ Installing `jupyter_console` from the `conda-forge` channel can be achieved by a
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `jupyter_console` can be installed with:
@@ -117,6 +118,7 @@ Feedstock Maintainers
 * [@Carreau](https://github.com/Carreau/)
 * [@SylvainCorlay](https://github.com/SylvainCorlay/)
 * [@blink1073](https://github.com/blink1073/)
+* [@davidbrochart](https://github.com/davidbrochart/)
 * [@jakirkham](https://github.com/jakirkham/)
 * [@minrk](https://github.com/minrk/)
 * [@ocefpaf](https://github.com/ocefpaf/)
