@@ -9,7 +9,7 @@ source:
   sha256: 242248e1685039cd8bff2c2ecb7ce6c1546eb50ee3b08519729e6e881aec19c7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - jupyter_client
+    - jupyter_client <7.0.0
     - ipython
     - ipykernel
     - prompt_toolkit >=2.0.0,<3.1.0,!=3.0.0,!=3.0.1
@@ -49,3 +49,4 @@ extra:
     - ocefpaf
     - blink1073
     - Carreau
+    - davidbrochart
