@@ -1,4 +1,4 @@
-{% set version = "6.4.2" %}
+{% set version = "6.4.3" %}
 
 package:
   name: jupyter_console
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/j/jupyter_console/jupyter_console-{{ version }}.tar.gz
-  sha256: fce5bccac926c690924168ad46cae33a7d78d643a7b60af0f260af25d38ecf26
+  sha256: 55f32626b0be647a85e3217ddcdb22db69efc79e8b403b9771eb9ecc696019b5
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - jupyter_client <7.0.0
+    - jupyter_client >=7.0.0
     - ipython
     - ipykernel
     - prompt_toolkit >=2.0.0,<3.1.0,!=3.0.0,!=3.0.1
