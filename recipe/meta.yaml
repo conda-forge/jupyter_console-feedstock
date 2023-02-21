@@ -26,7 +26,7 @@ requirements:
     - ipython
     - ipykernel >=6.14
     - jupyter_core >=4.12,!=5.0.*
-    - prompt_toolkit >=3.0.30"
+    - prompt_toolkit >=3.0.30
     - pyzmq >=17
     - traitlets >=5.4
     - pygments
