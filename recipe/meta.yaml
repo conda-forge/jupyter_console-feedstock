@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/j/jupyter_console/jupyter_console-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/j/jupyter_console/jupyter_console-{{ version }}.tar.gz
   sha256: 566a4bf31c87adbfadf22cdf846e3069b59a71ed5da71d6ba4d8aaad14a53539
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
@@ -17,11 +17,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - hatchling >=1.5
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - jupyter_client >=7.0.0
     - ipython
     - ipykernel >=6.14
@@ -32,6 +32,8 @@ requirements:
     - pygments
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - jupyter-console -h
   imports:
